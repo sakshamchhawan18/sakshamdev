@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import MENU from "./components/menu";
+import SLIDER from "./components/slider";
+import ABOUTUS from "./components/aboutus";
+import SKILLS from "./components/skills";
+import PORTFOLIO from "./components/portfolio";
+import CONTACT from "./components/contact";
+import styled from "styled-components";
+import {  } from "react-icons/fa";
+const Wrapper = styled.div`
+  top:0;
+  left:0;
+  overflow:hidden;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container y mandatory-scroll-snapping">
+    
+    
+    <SLIDER><MENU></MENU></SLIDER>
+    <ABOUTUS />
+    <SKILLS />
+    <PORTFOLIO />
+    <CONTACT /> 
+
+    
     </div>
   );
 }
